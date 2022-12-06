@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import './App.css';
+import AppRouter from './router/AppRouter';
 import userData from './userData';
 
 
@@ -8,16 +9,19 @@ import userData from './userData';
 
 
 function App() {
-
-  useEffect(() => {
-    console.log(userData);
-  }, [])
-
-
-
   return (
     <div className="App">
-      {userData.map((element, key) => {
+      <AppRouter/>
+    </div>
+  );
+}
+
+export default App;
+
+
+
+
+{/* {userData.map((element, key) => {
         return (
           <div>
             <p>{element.id}</p>
@@ -27,9 +31,4 @@ function App() {
           </div>
 
         )
-      })}
-    </div>
-  );
-}
-
-export default App;
+      })} */}
