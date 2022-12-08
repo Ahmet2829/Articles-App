@@ -1,0 +1,20 @@
+.mainDiv {
+
+    margin-top: 2%;
+}
+
+* {
+    margin: 0;
+
+}
+
+.itemAlign {
+    align-items: center;
+
+    margin: auto;
+
+}
+
+.ilomilo {
+    height:80vh;
+}
