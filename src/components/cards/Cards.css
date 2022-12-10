@@ -28,17 +28,7 @@
   transition: 0.5s;
 }
 
-.container .card:nth-child(1) .box .content a {
-  background: #2196f3;
-}
 
-.container .card:nth-child(2) .box .content a {
-  background: #e91e63;
-}
-
-.container .card:nth-child(3) .box .content a {
-  background: #23c186;
-}
 
 .container .card .box {
   position: absolute;

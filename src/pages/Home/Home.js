@@ -1,6 +1,3 @@
-import cloudMain from '../../assets/Cloud.jpg'
-import articleOne from '../../assets/article1.jpg'
-import articleTwo from '../../assets/article2.jpg'
 import articleFour from '../../assets/article4.jpg'
 import './Home.css';
 import Cards from '../../components/cards/Cards';
@@ -28,6 +25,15 @@ const Home = () => {
                             </div>
 
                         </div>
+
+                        <div className="carousel-item">
+                            <div className="w-75">
+                                <h2>Most visited article app since 2019</h2>
+                            </div>
+                            <img src={articleFour} className="d-block w-75 itemAlign ilomilo" alt="..." />
+
+                        </div>
+
                         <div className="carousel-item" data-bs-interval="2000">
                             <div className=" ">
                                 <h2>Selections from authors</h2>
@@ -35,13 +41,6 @@ const Home = () => {
                             <div className='d-block w-75 itemAlign'>
                                 <Cards />
                             </div>
-
-                        </div>
-                        <div className="carousel-item">
-                        <div className=" ">
-                                <h2>Most visited article app since 2019</h2>
-                            </div>
-                            <img src={articleFour} className="d-block w-75 itemAlign ilomilo" alt="..." />
 
                         </div>
                     </div>
@@ -55,7 +54,7 @@ const Home = () => {
                     </button>
                 </div>
             </div>
-      </div >
+        </div >
     )
 }
 

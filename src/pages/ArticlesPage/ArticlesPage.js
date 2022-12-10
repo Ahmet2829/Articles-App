@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react';
-import { Navigate, useNavigate } from 'react-router';
+import { useState } from 'react';
+import { useNavigate } from 'react-router';
 import './ArticlesPage.css';
 
 
@@ -8,7 +8,7 @@ import './ArticlesPage.css';
 const ArticlesPage = ({ articlesData }) => {
 
   const [subject, setsubject] = useState("")
-  const [chooseElement, setChooseElemet] = useState()
+
 
   const navigate = useNavigate();
 
@@ -72,7 +72,7 @@ const ArticlesPage = ({ articlesData }) => {
                   <div className="body_post">
                     <div className="post_content">
                       <h1>{element.header}</h1>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi assumenda cumque deserunt
+                      <p onClick={() => navigate(`/ArticlesInto/${element.id}`)}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi assumenda cumque deserunt
                         dolorum ex exercitationem.</p>
                       <div className="container_infos">
                         <div className="postedBy">
@@ -83,7 +83,7 @@ const ArticlesPage = ({ articlesData }) => {
                           <span>author</span>
                           <div className="tags">
                             <ul>
-                              <li onClick={() => navigate(`/Profile/${element.author}`)}>{element.author} </li>
+                              <li onClick={() => navigate(`/Profile/${element.id}`)}>{element.author} </li>
                             </ul>
                           </div>
                         </div>
@@ -110,7 +110,7 @@ const ArticlesPage = ({ articlesData }) => {
                   <div className="body_post">
                     <div className="post_content">
                       <h1>{element.header}</h1>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi assumenda cumque deserunt
+                      <p onClick={() => navigate(`/ArticlesInto/${element.id}`)}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi assumenda cumque deserunt
                         dolorum ex exercitationem.</p>
                       <div className="container_infos">
                         <div className="postedBy">
