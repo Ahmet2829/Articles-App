@@ -55,18 +55,8 @@ const Home = () => {
                     </button>
                 </div>
             </div>
-
-
-
-
-
-        </div >
+      </div >
     )
 }
 
 export default Home
-
-
-
-
-

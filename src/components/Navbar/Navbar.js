@@ -1,6 +1,12 @@
+import { Navigate, useNavigate } from 'react-router';
 import './Navbar.css';
 
+
+
+
 const Navbar = () => {
+
+    const navigate = useNavigate();
     return (
 
 
@@ -17,8 +23,8 @@ const Navbar = () => {
                     <span></span>
                     <span></span>
                     <div class="menu">
-                        <li><a href="#">home</a></li>
-                        <li><a href="#">about</a></li>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/ArticlesPage">Articles</a></li>
                         <li><a href="#">cursos</a></li>
                         <li><a href="#">blog</a></li>
                         <li><a href="#">contactos</a></li>

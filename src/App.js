@@ -7,25 +7,15 @@ import articlesData from './articlesData';
 import Cards from './components/cards/Cards';
 
 
-console.log(articlesData[0].article);
+console.log(articlesData);
 
 
 function App() {
   return (
     <div className="App">
-      {/* {articlesData.article.map((element, key) => {
-        return (
-          <div>
-            <p>{element}</p>
 
 
-
-          </div>
-
-        )
-      })} */}
-
-      <AppRouter />
+      <AppRouter userData={userData} articlesData={articlesData} />
     </div>
   );
 }
